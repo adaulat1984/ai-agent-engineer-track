@@ -4,7 +4,7 @@ One-hour-a-day study log for a C# / .NET developer moving into building AI agent
 
 **Goal:** ship one public agent with tools, memory, RAG, a simple eval, and MCP.
 
-**Today:** Day 1 of 180. See [PROGRESS.md](PROGRESS.md).
+**Today:** Day 2 of 180. See [PROGRESS.md](PROGRESS.md). This week’s lessons and exercises are in [WEEK.md](WEEK.md).
 
 ## How a day works
 
@@ -28,18 +28,21 @@ Reply `done` plus the script output in the coaching chat to unlock the next day.
 
 Courses, in order: [Python for Everybody](https://www.coursera.org/specializations/python), [Generative AI with Large Language Models](https://www.coursera.org/learn/generative-ai-with-llms), [AI Agent Developer](https://www.coursera.org/specializations/ai-agents), [IBM RAG and Agentic AI](https://www.coursera.org/professional-certificates/ibm-rag-and-agentic-ai).
 
-## Day 1
+## This week
+
+Days 2 through 8 each have `learn.md` (the lesson) and `exercise.py` (the practice). Start at Day 2. One hour, one folder.
 
 ```powershell
-cd daily/day-001
+cd daily/day-002
 python exercise.py
 ```
 
-Python 3.13 is enough. Fill the three TODOs in `exercise.py`, then record both runs (a name, and an empty name) in `notes.md`.
+Python 3.13 is enough.
 
 ## Layout
 
 ```text
 PROGRESS.md          current day, phase, and percent
-daily/day-001/       today's notes and starter script
+WEEK.md              5 Oct to 11 Oct lesson index
+daily/day-00N/       learn.md, exercise.py, notes.md
 ```
