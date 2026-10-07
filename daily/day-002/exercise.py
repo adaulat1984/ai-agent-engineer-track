@@ -16,7 +16,10 @@ def overtime_pay(hours, rate):
     # - 45 hours at 10 -> (40 * 10) + (5 * 10 * 1.5) = 400 + 75 = 475
     #
     # Replace the line below with: return <your pay>
-    return None
+    DefaultPayrate = 40 * rate
+    if hours <= 40:
+        return hours * rate
+    return DefaultPayrate + (hours - 40) * rate * 1.5
 
 
 shifts = [(40, 10.0), (45, 10.0)]
@@ -34,6 +37,7 @@ try:
     # 3. Print the number it returns.
     #
     # Delete the print("TODO", raw) line once your own print is in place.
-    print("TODO", raw)
+    extra_hours = float(raw)
+    print(overtime_pay(extra_hours, 15))
 except ValueError:
     print("Enter a number for hours.")
